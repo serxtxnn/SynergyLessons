@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер изображений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <h1 class="slider-title">Галерея</h1>
+        
+        <div class="slider-wrapper">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714" alt="Изображение 1" class="slider-image" id="current-image">
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn" id="prevBtn" aria-label="Предыдущее изображение">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                
+                <div class="image-counter" id="imageCounter">Изображение 1 из 5</div>
+                
+                <button class="slider-btn next-btn" id="nextBtn" aria-label="Следующее изображение">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
